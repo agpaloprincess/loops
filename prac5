@@ -1,0 +1,21 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int number3 = 57382;
+        int sumOdd3 = 0;
+        int n3 = number3;
+
+        do
+        {
+            int digit = n3 % 10;
+            if (digit % 2 != 0)
+                sumOdd3 += digit;
+            n3 /= 10;
+        } while (n3 > 0);
+
+        Console.WriteLine($"Sum of odd digits: {sumOdd3}");
+    }
+}
