@@ -1,0 +1,16 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int baseNum2 = 2, exp2 = 5;
+        int result2 = 1, i2 = 1;
+        while (i2 <= exp2)
+        {
+            result2 *= baseNum2;
+            i2++;
+        }
+        Console.WriteLine($"Power: {result2}");
+    }
+}
